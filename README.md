@@ -1,6 +1,5 @@
-# Minim-AST
+# Type Checker
 
-Type Checking
 The type checker will determine the type of every expression represented in the abstract-syntax tree and will use that information to identify type errors. In the minim language we have the following types:
 
 int, bool, void (as function return types only), strings, struct types, and function types
