@@ -1,0 +1,120 @@
+int f() {
+}
+
+void f_int(int integer) {
+}
+
+void f_int_int(int int_1, int int_2) {
+}
+
+void f_int_bool(int integer, bool boolean) {
+}
+
+void f_bool_int(bool boolean, int integer) {
+}
+
+void f_bool_bool(bool b1, bool b2) {
+}
+
+struct struct_1{
+    int x;
+    int y;
+};
+
+struct struct_1 p;
+int integer;
+bool boolean;
+void test_write() {
+    cout << integer(int);
+    cout << boolean(bool);
+    cout << f(->int)();
+    cout << p(struct_1).x(int);
+    cout << p(struct_1).y(int);
+}
+
+void test_read() {
+    cin >> integer(int);
+    cin >> boolean(bool);
+    cin >> p(struct_1).x(int);
+    cin >> p(struct_1).y(int);
+}
+
+void test_function_call() {
+    f_int(int->void)(integer(int));
+    f_int_int(int,int->void)(integer(int), integer(int));
+    f_int_bool(int,bool->void)(integer(int), boolean(bool));
+    f_bool_int(bool,int->void)(boolean(bool), integer(int));
+    f_bool_bool(bool,bool->void)(boolean(bool), boolean(bool));
+    f_int_int(int,int->void)(p(struct_1).x(int), p(struct_1).y(int));
+}
+
+int f_int_1() {
+    return integer(int);
+}
+
+bool f_bool_1() {
+    return boolean(bool);
+}
+
+void f_void_1() {
+    return;
+}
+
+int f_int_2() {
+}
+
+bool f_bool_2() {
+}
+
+void f_void_2() {
+}
+
+void testArithmetic() {
+    integer(int) = (integer(int) + integer(int));
+    integer(int) = (integer(int) - integer(int));
+    integer(int) = (integer(int) * integer(int));
+    integer(int) = (integer(int) / integer(int));
+    integer(int)++;
+    integer(int)--;
+}
+
+void testLogical() {
+    boolean(bool) = (!boolean(bool));
+    boolean(bool) = (boolean(bool) && boolean(bool));
+    boolean(bool) = (boolean(bool) || boolean(bool));
+}
+
+void testRelational() {
+    boolean(bool) = (integer(int) < integer(int));
+    boolean(bool) = (integer(int) > integer(int));
+    boolean(bool) = (integer(int) <= integer(int));
+    boolean(bool) = (integer(int) >= integer(int));
+}
+
+void test_if() {
+    if (boolean(bool)) {
+        integer(int) = integer(int);
+    }
+}
+
+void testWhile() {
+    while (boolean(bool)) {
+        integer(int) = integer(int);
+    }
+}
+
+void testEquality() {
+    boolean(bool) = (integer(int) == integer(int));
+    boolean(bool) = (boolean(bool) == boolean(bool));
+    boolean(bool) = (integer(int) != integer(int));
+    boolean(bool) = (boolean(bool) != boolean(bool));
+}
+
+void testAssignment() {
+    integer(int) = integer(int);
+    integer(int) = p(struct_1).x(int);
+    integer(int) = p(struct_1).y(int);
+    boolean(bool) = boolean(bool);
+    boolean(bool) = (p(struct_1).x(int) == p(struct_1).y(int));
+}
+
